@@ -1,0 +1,70 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 30vh;
+    justify-content: flex-start;
+    column-gap: 100px;
+    align-items: flex-end;
+    margin-bottom: 2vh;
+
+}
+
+.theme {
+    background-color: black;
+    color: white;
+    display: block;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    align-items: flex-end;
+    margin-bottom: 7vh;
+
+}
+
+#evilDead{
+    border-radius: 15px;
+    color: rgb(214, 0, 0);
+
+}
+
+#twd {
+    border-radius: 15px;
+    color: rgb(78, 124, 78);
+}
+
+#themeText {
+    color:rgb(214, 0, 0);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    
+}
+#question {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+#questionButton {
+    display: flex;
+    justify-content: center;
+}
+
+#siteName {
+    font-size: 72px;
+}
+
+#logo {
+    width: 10vw;
+    height: auto;
+    margin-left: 10px;
+}
