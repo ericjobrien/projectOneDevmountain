@@ -43,16 +43,20 @@
         const replyBtn = document.getElementById('qBtn');
         const innerText = questionEl.innerHTML;
         
+
+        // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
             e.preventDefault();
+            
             const sectionEl = document.getElementById('underReplyBtn');
             const answerEl = document.createElement('p');
 
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
             answerEl.style.color = 'rgb(214, 0, 0)';
+            answerEl.textContent = ''; //should reset the textContent to nothing everytime;
 
-            axios.get('/api/displayQuestion')
+            axios.get('/api/displayAnswer')
                 .then((res) => {
                     let sayingArr = res.data;
                     // answerEl.textContent = res.data;
@@ -62,7 +66,7 @@
                          let index = Math.floor(Math.random() * num);
                          saying = arr[index];
                          console.log(saying);
-                         answerEl.textContent = saying;
+                         answerEl.textContent = `Answer: ${saying}`;
                      }
 
                      randomSaying(sayingArr);
@@ -70,7 +74,12 @@
 
 
         }
+
+        function displayQuestion(e) {
+            e.preventDefault();
+        }
         replyBtn.addEventListener('click', displayAnswer);
+
 
     </script>
     <script src="app.js"></script>

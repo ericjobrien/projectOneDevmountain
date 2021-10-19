@@ -15,10 +15,12 @@ app.get("/app.js", (req, res) => {
 })
 
 
-app.get('/api/displayQuestion', (req, res) => {
-    let sayings = ['nope', 'say hello to my boom-stick', "good. bad. I'm the guy with the gun"]
+app.get('/api/displayAnswer', (req, res) => {
+    let sayings = ['nope', 'say hello to my boom-stick', "good. bad. I'm the guy with the gun", "Carl...", "Jeez Rick, I just don't know."]
     res.status(200).send(sayings);
 })
+
+app.post('api/displayQuestion')
 
 const port = process.env.PORT || 4404;
 
