@@ -47,7 +47,7 @@
         // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
             e.preventDefault();
-            
+            answerEl.style.display = "hidden";
             const sectionEl = document.getElementById('underReplyBtn');
             const answerEl = document.createElement('p');
 
@@ -88,6 +88,7 @@
             consolt.log(text);
         }
         replyBtn.addEventListener('click', displayAnswer);
+        
         questionEl.addEventListener('submit', testFunction);
 
     </script>
