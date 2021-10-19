@@ -20,7 +20,9 @@ app.get('/api/displayAnswer', (req, res) => {
     res.status(200).send(sayings);
 })
 
-app.post('api/displayQuestion')
+app.post('api/displayQuestion', (req, res) => {
+    res.status(200).send(req.body);
+})
 
 const port = process.env.PORT || 4404;
 

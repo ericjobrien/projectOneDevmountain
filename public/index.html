@@ -39,7 +39,7 @@
     </section>
     <script>
 
-        const questionEl = document.getElementById('question');
+        const questionEl = document.getElementById('questionForm');
         const replyBtn = document.getElementById('qBtn');
         const innerText = questionEl.innerHTML;
         
@@ -70,15 +70,18 @@
 
                      randomSaying(sayingArr);
                 }) 
-
-            answerEl.textContent = '';
         }
 
         function displayQuestion(e) {
             e.preventDefault();
+
+            axios.post('api/displayQuestion')
+                .then((res) => {
+                    console.log(res.body);
+                })
         }
         replyBtn.addEventListener('click', displayAnswer);
-
+        questionEl.addEventListener('submit', displayQuestion);
 
     </script>
     <script src="app.js"></script>
