@@ -48,13 +48,15 @@
 
         // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
-            
-            let text = document.getElementById('questionForm').value;
-            console.log(text);
             e.preventDefault();
-            
-            const sectionEl = document.getElementById('underReplyBtn');
+            let text = document.getElementById('questionForm').value;
+            const questionPara = document.createElement('p');
             const answerEl = document.createElement('p');
+            const sectionEl = document.getElementById('underReplyBtn');
+
+            sectionEl.appendChild(questionPara);
+            questionPara.style.fontSize = '28';
+            questionPara.style.color = 'black';
 
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
