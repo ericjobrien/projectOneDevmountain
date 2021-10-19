@@ -54,7 +54,6 @@
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
             answerEl.style.color = 'rgb(214, 0, 0)';
-            answerEl.textContent = ''; //should reset the textContent to nothing everytime;
 
             axios.get('/api/displayAnswer')
                 .then((res) => {
@@ -72,7 +71,7 @@
                      randomSaying(sayingArr);
                 }) 
 
-
+            answerEl.textContent = '';
         }
 
         function displayQuestion(e) {
