@@ -22,7 +22,7 @@ app.get('/api/displayAnswer', (req, res) => {
 
 app.post('api/displayQuestion', (req, res) => {
     let questions = [];
-    let question = res.body.value;
+    let question = req.body.value;
     questions.push(question)
     res.status(200).send(questions);
 })
