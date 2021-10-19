@@ -44,21 +44,30 @@
     </section>
     <script>
 
-            const questionEl = document.getElementById('question');
-            const replyBtn = document.getElementById('qBtn');
-            const innerText = questionEl.innerHTML;
-        function displayQuestion(e) {
+        const questionEl = document.getElementById('question');
+        const replyBtn = document.getElementById('qBtn');
+        const innerText = questionEl.innerHTML;
+
+        function displayAnswer(e) {
             e.preventDefault();
             axios.get('/api/displayQuestion')
                 .then((res) => {
-                    console.log(res.data);
-                })
-                .catch(err => {
-                    console.log(err)
-                })
+                    let sayingArr = res.data
 
-            }
-        replyBtn.addEventListener('click', displayQuestion);
+                    function randomSaying(arr) {
+                        let saying = '';
+                        let num = arr.length
+                        let index = Math.floor(Math.random() * num);
+                        saying = sayings[index];
+                        console.log(saying);
+                    }
+                    randomSaying(sayingArr);
+                }) 
+
+
+        }
+        replyBtn.addEventListener('click', displayAnswer);
+
     </script>
     <script src="app.js"></script>
 </body>
