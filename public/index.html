@@ -9,13 +9,12 @@
 </head>
 <body>
     <header>
-        <div>
-            <img id='logo' src="https://media.istockphoto.com/vectors/skull-and-crossbones-icon-on-white-background-vector-vector-id539681702?k=20&m=539681702&s=612x612&w=0&h=CWRAuCxpO1GuU8gujFzP7iKJdjgiDlxiBacakBx-jIY="/>
-        </div>
+        <div id="logo"> <img/></div>
         <div id="siteName">
         HorrorScope
         </div>
     </header>
+    <section id="themeBlock">
         <div id="themeText">
             Choose Theme
         </div>
@@ -27,21 +26,23 @@
                 <button id="twd">The Walking Dead</button>
             </div>
         </section>
-        <section id="question">
-            <form>
-                <input type="text" placeholder="Type Question Here"/>
-            </form>
-        </section>
-        <section id="questionButton">
-            <button>Get Reply</button>
-        </section>
-        <section class="hidden">
-            <div id="hiddenQuestion">
-                Question:
-            </div>
-            <div id="hiddenReply">
-                Reply:
-            </div>
-        </section>
+    </section>
+    <section id="question">
+        <form id="questionForm">
+            <input type="text" placeholder="Type Question Here"/>
+        </form>
+    </section>
+    <section id="questionButton">
+        <button id="qBtn">Get Reply</button>
+    </section>
+    <section class="hidden">
+        <div id="hiddenQuestion">
+            Question:
+        </div>
+        <div id="hiddenReply">
+            Reply:
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>

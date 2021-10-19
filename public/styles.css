@@ -4,6 +4,10 @@
 
 body {
     background-color: white;
+    font-family: NSimSun;
+    font-style: normal;
+    font-weight: normal;
+    display: relative;
 }
 
 header {
@@ -14,12 +18,14 @@ header {
     justify-content: flex-start;
     column-gap: 100px;
     align-items: flex-end;
-    margin-bottom: 2vh;
+    margin-bottom: 2vh; 
+}
 
+#themeBlock {
+    background-color: black;
 }
 
 .theme {
-    background-color: black;
     color: white;
     display: block;
     height: 5vh;
@@ -50,21 +56,37 @@ header {
     
 }
 #question {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1vh;
-}
-#questionButton {
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11em;
+    margin-bottom: 2vh;
 }
 
+
+#questionButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    margin-bottom: 4vh;
+    font-size: 15px;
+}
+
+
+
 #siteName {
+    font-family: NSimSun;
+    font-style: normal;
+    font-weight: normal;
     font-size: 72px;
+    line-height: 82px;
 }
 
 #logo {
-    width: 10vw;
-    height: auto;
+    background-image: url("https://media.istockphoto.com/vectors/skull-and-crossbones-icon-on-white-background-vector-vector-id539681702?k=20&m=539681702&s=612x612&w=0&h=CWRAuCxpO1GuU8gujFzP7iKJdjgiDlxiBacakBx-jIY=");
+    width: 15vw;
+    height: 29vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 10px;
+    border-radius: 15px;
 }
