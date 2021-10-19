@@ -82,8 +82,13 @@
         //             console.log(text);
         //         })
         // }
+
+        function testFunction() {
+            let text = document.getElementById('questionForm').innerText;
+            consolt.log(text);
+        }
         replyBtn.addEventListener('click', displayAnswer);
-        questionEl.addEventListener('submit', displayQuestion);
+        questionEl.addEventListener('submit', testFunction);
 
     </script>
     <script src="app.js"></script>
