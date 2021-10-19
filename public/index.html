@@ -72,14 +72,16 @@
                 }) 
         }
 
-        function displayQuestion(body) {
-            e.preventDefault();
-            axios.post('api/displayQuestion', body)
-                .then((res) => {
-                    let text = document.getElementById('questionForm').value;
-                    console.log(text);
-                })
-        }
+        // function displayQuestion(body) {
+        //     e.preventDefault();
+        //     axios.post('api/displayQuestion', body)
+        //         .then((res) => {
+        //             let text = ({data: questions }) => ({
+
+        //             }) 
+        //             console.log(text);
+        //         })
+        // }
         replyBtn.addEventListener('click', displayAnswer);
         questionEl.addEventListener('submit', displayQuestion);
 
