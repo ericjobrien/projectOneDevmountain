@@ -55,17 +55,17 @@
             axios.get('/api/displayQuestion')
                 .then((res) => {
                     let sayingArr = res.data;
-                    answerEl.textContent = res.data;
-                    // function randomSaying(arr) {
-                    //     let saying = '';
-                    //     let num = arr.length
-                    //     let index = Math.floor(Math.random() * num);
-                    //     saying = arr[index];
-                    //     console.log(saying);
-                    //     answerEl.textContent = saying;
-                    // }
+                    // answerEl.textContent = res.data;
+                    function randomSaying(arr) {
+                         let saying = '';
+                         let num = arr.length
+                         let index = Math.floor(Math.random() * num);
+                         saying = arr[index];
+                         console.log(saying);
+                         //answerEl.textContent = saying;
+                     }
 
-                    // randomSaying(sayingArr);
+                     randomSaying(sayingArr);
                 }) 
 
 
