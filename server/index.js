@@ -20,12 +20,6 @@ app.get('/api/displayAnswer', (req, res) => {
     res.status(200).send(sayings);
 })
 
-app.get('api/displayQuestion', (req, res) => {
-    let questions = [];
-    let question = res.data;
-    questions.push(question)
-    res.status(200).send(questions);
-})
 
 const port = process.env.PORT || 4404;
 
