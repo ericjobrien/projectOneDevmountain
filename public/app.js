@@ -18,6 +18,7 @@ const twdTheme = () => {
     headerEl.style.backgroundColor = 'rgba(128, 194, 96, 0.5)';
     logoEl.style.boxShadow = '3px 8px 2px #B60000';
     siteNameEl.style.textShadow = '0px 4px 4px #B60000';
+    siteNameEl.style.color = 'white';
     themeBlockEl.style.backgroundColor = 'rgba(128, 194, 96, 0.5)';
     questionEl.style.background = 'rgba(128, 194, 96, 0.5)';
     questionEl.style.mixBlendMode = 'darken';
