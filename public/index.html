@@ -57,7 +57,9 @@
             sectionEl.appendChild(questionPara);
             questionPara.style.fontSize = '28';
             questionPara.style.color = 'black';
-
+            questionPara.textContent = `Question: ${text}`
+            console.log(text);
+            
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
             answerEl.style.color = 'rgb(214, 0, 0)';
@@ -96,6 +98,7 @@
         questionEl.addEventListener('keyup', function(event) {
             console.log(1);
             if(event.keyCode === 13) {
+                console.log('hello again')
                 document.getElementById('qBtn').click();
             }
         });
