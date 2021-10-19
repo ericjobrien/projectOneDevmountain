@@ -32,7 +32,9 @@
         <form>
             <input id="questionForm" type="text" placeholder="Type Question Here"/>
         </form>
+        <div>
             <button id="qBtn">Get Reply</button>
+        </div>
     </section>
     <section id='underReplyBtn'>
 
@@ -92,7 +94,6 @@
         questionEl.addEventListener('keyup', function(event) {
             console.log(1);
             if(event.keyCode === 13) {
-                event.preventDefault();
                 document.getElementById('qBtn').click();
             }
         });
