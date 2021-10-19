@@ -49,7 +49,7 @@
             const innerText = questionEl.innerHTML;
         function displayQuestion(e) {
             e.preventDefault();
-            axios.get('http://localhost:4404/api/displayQuestion')
+            axios.get('/api/displayQuestion')
                 .then((res) => {
                     console.log(res.data);
                 })
