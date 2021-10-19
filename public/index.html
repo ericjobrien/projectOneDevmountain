@@ -49,25 +49,23 @@
             const answerEl = document.createElement('p');
 
             sectionEl.appendChild(answerEl);
-
-            answerEl.style.display = 'flex';
             answerEl.style.fontSize = '28px';
             answerEl.style.color = 'rgb(214, 0, 0)';
 
             axios.get('/api/displayQuestion')
                 .then((res) => {
                     let sayingArr = res.data;
+                    answerEl.textContent = res.data;
+                    // function randomSaying(arr) {
+                    //     let saying = '';
+                    //     let num = arr.length
+                    //     let index = Math.floor(Math.random() * num);
+                    //     saying = arr[index];
+                    //     console.log(saying);
+                    //     answerEl.textContent = saying;
+                    // }
 
-                    function randomSaying(arr) {
-                        let saying = '';
-                        let num = arr.length
-                        let index = Math.floor(Math.random() * num);
-                        saying = arr[index];
-                        console.log(saying);
-                        answerEl.textContent = saying;
-                    }
-
-                    randomSaying(sayingArr);
+                    // randomSaying(sayingArr);
                 }) 
 
 
