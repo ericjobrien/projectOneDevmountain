@@ -51,8 +51,9 @@
         function displayAnswer(e) {
             e.preventDefault();
             const answerEl = document.getElementById('hiddenReply');
+            answerEl.style.display = 'flex';
             answerEl.style.fontSize = '28px';
-            answerEl.style.color = 'rgb(214, 0, 0)'
+            answerEl.style.color = 'rgb(214, 0, 0)';
             axios.get('/api/displayQuestion')
                 .then((res) => {
                     let sayingArr = res.data;
