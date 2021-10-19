@@ -46,8 +46,12 @@
 
         // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
+            console.log(innerText);
+            let text = document.getElementById('questionForm').innerText;
+            console.log(text);
+            console.log('Hello Alien');
             e.preventDefault();
-            answerEl.style.display = "hidden";
+            
             const sectionEl = document.getElementById('underReplyBtn');
             const answerEl = document.createElement('p');
 
