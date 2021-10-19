@@ -2,6 +2,7 @@
 
 # HorrorScope
 HorrorScopre URL: https://projectonedevmountain.herokuapp.com/
+
 Learn more about the developer: https://www.linkedin.com/in/eric-o-brien-35aa2a85/
 
 ## Description
