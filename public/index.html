@@ -29,8 +29,8 @@
         </section>
     </section>
     <section id="question">
-        <form id="questionForm">
-            <input type="text" placeholder="Type Question Here"/>
+        <form>
+            <input id="questionForm" type="text" placeholder="Type Question Here"/>
         </form>
             <button id="qBtn">Get Reply</button>
     </section>
@@ -41,15 +41,14 @@
 
         const questionEl = document.getElementById('questionForm');
         const replyBtn = document.getElementById('qBtn');
-        const innerText = questionEl.innerHTML;
+        
         
 
         // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
-            console.log(innerText);
-            let text = document.getElementById('questionForm').innerText;
+            
+            let text = document.getElementById('questionForm').value;
             console.log(text);
-            console.log('Hello Alien');
             e.preventDefault();
             
             const sectionEl = document.getElementById('underReplyBtn');
@@ -88,9 +87,7 @@
         // }
 
         function testFunction() {
-            let text = document.getElementById('questionForm').innerText;
-            console.log(text);
-            console.log('Hello Alien');
+            alert("Please hit 'Get Reply' instead of enter");
 
         }
         replyBtn.addEventListener('click', displayAnswer);
