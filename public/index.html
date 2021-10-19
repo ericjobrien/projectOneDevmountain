@@ -86,16 +86,16 @@
         //         })
         // }
 
-        function testFunction(event) {
+      
+        replyBtn.addEventListener('click', displayAnswer);
+        
+        questionEl.addEventListener('keyup', function(event) {
             console.log(1);
             if(event.keyCode === 13) {
                 event.preventDefault();
                 document.getElementById('qBtn').click();
             }
-        }
-        replyBtn.addEventListener('click', displayAnswer);
-        
-        questionEl.addEventListener('keyup', testFunction);
+        });
 
     </script>
     <script src="app.js"></script>
