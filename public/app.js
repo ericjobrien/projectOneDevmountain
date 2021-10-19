@@ -1,11 +1,13 @@
-console.log('I am an alien');
+
+
+console.log('I am an alien'); //testing the website is connected 
 
 const twdBtn = document.getElementById('twd');
 const evilDeadBtn = document.getElementById('evilDead');
 
-function themeChange() {
+function themeChange() { //run both theme change functions below inside one function so user can switch back and forth between themes, before once one theme was chosen, the website would be stuck on that theme.
 
-
+//changes the theme of the website to TWD
 const twdTheme = () => {
     
     const headerEl = document.querySelector('header');
@@ -28,6 +30,8 @@ const twdTheme = () => {
 
 }
 
+
+//changes the theme of the website to evil dead
 const evilDeadTheme = () => {
     const headerEl = document.querySelector('header');
     const logoEl = document.getElementById('logo');
@@ -51,10 +55,9 @@ const evilDeadTheme = () => {
 
 
 
-
 evilDeadBtn.addEventListener('click', evilDeadTheme);
 twdBtn.addEventListener('click', twdTheme);
 
-}
+}; // end of themeChange function
 
 themeChange();

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HorrorScope</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 </head>
 <body>
     <header>
@@ -31,9 +32,7 @@
         <form id="questionForm">
             <input type="text" placeholder="Type Question Here"/>
         </form>
-    </section>
-    <section id="questionButton">
-        <button id="qBtn">Get Reply</button>
+            <button id="qBtn">Get Reply</button>
     </section>
     <section class="hidden">
         <div id="hiddenQuestion">
@@ -43,6 +42,24 @@
             Reply:
         </div>
     </section>
+    <script>
+
+            const questionEl = document.getElementById('question');
+            const replyBtn = document.getElementById('qBtn');
+            const innerText = questionEl.innerHTML;
+        function displayQuestion(e) {
+            e.preventDefault();
+            axios.get('http://localhost:4404/api/displayQuestion')
+                .then((res) => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+
+            }
+        replyBtn.addEventListener('click', displayQuestion);
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
