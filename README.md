@@ -9,6 +9,8 @@ Learn more about the developer: https://www.linkedin.com/in/eric-o-brien-35aa2a8
 HorrorScope is my first project for Devmountain.  I completed it at the end of foundations.  I created Horrorscope to celebrate Halloween since it is around the corner 
 and to highlight a few interactive features.  This is a fun tool that takes in questions from users and returns a quote from a horror franchise character as an answer to the question.
 Users also have the option of changing the theme of the website which adjusts a number of HTML elements. 
+
+
 ## Technology
 - Vanilla Javascript
 - Node.js

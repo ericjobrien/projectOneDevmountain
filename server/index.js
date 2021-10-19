@@ -21,8 +21,10 @@ app.get('/api/displayAnswer', (req, res) => {
 })
 
 app.post('api/displayQuestion', (req, res) => {
-    
-    res.status(200).send(req.body);
+    let questions = [];
+    let question = req.body;
+    questions.push(question)
+    res.status(200).send(questions);
 })
 
 const port = process.env.PORT || 4404;
