@@ -1,5 +1,3 @@
-
-
 console.log('I am an alien'); //testing the website is connected 
 
 const twdBtn = document.getElementById('twd');
@@ -61,3 +59,259 @@ twdBtn.addEventListener('click', twdTheme);
 }; // end of themeChange function
 
 themeChange();
+
+//table
+
+    const aries = document.getElementById('aries');
+
+    const ariesMouseEvents = () => {
+
+        const ariesMouseOver = () => {
+            aries.style.boxShadow = '5px 10px 5px #000000';
+            aries.style.opacity = '75%';
+        }
+
+        const ariesMouseOut = () => {
+            aries.style.boxShadow = '0px 0px 0px';
+            aries.style.opacity = '100';
+        }
+
+        aries.addEventListener('mouseover', ariesMouseOver);
+        aries.addEventListener('mouseout', ariesMouseOut);
+
+        }
+
+ ariesMouseEvents();
+
+    const taurus = document.getElementById('taurus');
+
+    const taurusMouseEvents = () => {
+
+        const taurusMouseOver = () => {
+            taurus.style.boxShadow = '5px 10px 5px #000000';
+            taurus.style.opacity = '75%';
+        }
+
+        const taurusMouseOut = () => {
+            taurus.style.boxShadow = '0px 0px 0px';
+            taurus.style.opacity = '100';
+        }
+
+        taurus.addEventListener('mouseover', taurusMouseOver);
+        taurus.addEventListener('mouseout', taurusMouseOut);
+
+        }
+
+taurusMouseEvents();
+
+    const gemini = document.getElementById('gemini');
+
+    const geminiMouseEvents = () => {
+
+        const geminiMouseOver = () => {
+            gemini.style.boxShadow = '5px 10px 5px #000000';
+            gemini.style.opacity = '75%';
+        }
+
+        const geminiMouseOut = () => {
+            gemini.style.boxShadow = '0px 0px 0px';
+            gemini.style.opacity = '100';
+        }
+
+        gemini.addEventListener('mouseover', geminiMouseOver);
+        gemini.addEventListener('mouseout', geminiMouseOut);
+
+        }
+
+geminiMouseEvents();
+
+const cancer = document.getElementById('cancer');
+
+    const cancerMouseEvents = () => {
+
+        const cancerMouseOver = () => {
+            cancer.style.boxShadow = '5px 10px 5px #000000';
+            cancer.style.opacity = '75%';
+        }
+
+        const cancerMouseOut = () => {
+            cancer.style.boxShadow = '0px 0px 0px';
+            cancer.style.opacity = '100';
+        }
+
+        cancer.addEventListener('mouseover', cancerMouseOver);
+        cancer.addEventListener('mouseout', cancerMouseOut);
+
+        }
+
+cancerMouseEvents();
+
+const leo = document.getElementById('leo');
+
+        const leoMouseEvents = () => {
+
+            const leoMouseOver = () => {
+                leo.style.boxShadow = '5px 10px 5px #000000';
+                leo.style.opacity = '75%';
+            }
+
+            const leoMouseOut = () => {
+                leo.style.boxShadow = '0px 0px 0px';
+                leo.style.opacity = '100';
+            }
+
+            leo.addEventListener('mouseover', leoMouseOver);
+            leo.addEventListener('mouseout', leoMouseOut);
+
+            }
+
+leoMouseEvents();
+
+const virgo = document.getElementById('virgo');
+
+        const virgoMouseEvents = () => {
+
+            const virgoMouseOver = () => {
+                virgo.style.boxShadow = '5px 10px 5px #000000';
+                virgo.style.opacity = '75%';
+            }
+
+            const virgoMouseOut = () => {
+                virgo.style.boxShadow = '0px 0px 0px';
+                virgo.style.opacity = '100';
+            }
+
+            virgo.addEventListener('mouseover', virgoMouseOver);
+            virgo.addEventListener('mouseout', virgoMouseOut);
+
+            }
+
+virgoMouseEvents();
+
+const libra = document.getElementById('libra');
+
+        const libraMouseEvents = () => {
+
+            const libraMouseOver = () => {
+                libra.style.boxShadow = '5px 10px 5px #000000';
+                libra.style.opacity = '75%';
+            }
+
+            const libraMouseOut = () => {
+                libra.style.boxShadow = '0px 0px 0px';
+                libra.style.opacity = '100';
+            }
+
+            libra.addEventListener('mouseover', libraMouseOver);
+            libra.addEventListener('mouseout', libraMouseOut);
+
+            }
+            
+libraMouseEvents();
+
+            const scorpius = document.getElementById('scorpius');
+
+            const scorpiusMouseEvents = () => {
+    
+                const scorpiusMouseOver = () => {
+                    scorpius.style.boxShadow = '5px 10px 5px #000000';
+                    scorpius.style.opacity = '75%';
+                }
+    
+                const scorpiusMouseOut = () => {
+                    scorpius.style.boxShadow = '0px 0px 0px';
+                    scorpius.style.opacity = '100';
+                }
+    
+                scorpius.addEventListener('mouseover', scorpiusMouseOver);
+                scorpius.addEventListener('mouseout', scorpiusMouseOut);
+    
+                }
+                
+scorpiusMouseEvents();
+
+        const sagittarius = document.getElementById('sagittarius');
+
+        const sagittariusMouseEvents = () => {
+
+            const sagittariusMouseOver = () => {
+                sagittarius.style.boxShadow = '5px 10px 5px #000000';
+                sagittarius.style.opacity = '75%';
+            }
+
+            const sagittariusMouseOut = () => {
+                sagittarius.style.boxShadow = '0px 0px 0px';
+                sagittarius.style.opacity = '100';
+            }
+
+            sagittarius.addEventListener('mouseover', sagittariusMouseOver);
+            sagittarius.addEventListener('mouseout', sagittariusMouseOut);
+
+            }
+    
+sagittariusMouseEvents();
+
+const capricornus = document.getElementById('capricornus');
+
+const capricornusMouseEvents = () => {
+
+    const capricornusMouseOver = () => {
+        capricornus.style.boxShadow = '5px 10px 5px #000000';
+        capricornus.style.opacity = '75%';
+    }
+
+    const capricornusMouseOut = () => {
+        capricornus.style.boxShadow = '0px 0px 0px';
+        capricornus.style.opacity = '100';
+    }
+
+    capricornus.addEventListener('mouseover', capricornusMouseOver);
+    capricornus.addEventListener('mouseout', capricornusMouseOut);
+
+    }
+
+capricornusMouseEvents();
+
+const aquarius = document.getElementById('aquarius');
+
+const aquariusMouseEvents = () => {
+
+    const aquariusMouseOver = () => {
+        aquarius.style.boxShadow = '5px 10px 5px #000000';
+        aquarius.style.opacity = '75%';
+    }
+
+    const aquariusMouseOut = () => {
+        aquarius.style.boxShadow = '0px 0px 0px';
+        aquarius.style.opacity = '100';
+    }
+
+    aquarius.addEventListener('mouseover', aquariusMouseOver);
+    aquarius.addEventListener('mouseout', aquariusMouseOut);
+
+    }
+
+aquariusMouseEvents();
+
+const pisces = document.getElementById('pisces');
+
+const piscesMouseEvents = () => {
+
+    const piscesMouseOver = () => {
+        pisces.style.boxShadow = '5px 10px 5px #000000';
+        pisces.style.opacity = '75%';
+    }
+
+    const piscesMouseOut = () => {
+        pisces.style.boxShadow = '0px 0px 0px';
+        pisces.style.opacity = '100';
+    }
+
+    pisces.addEventListener('mouseover', piscesMouseOver);
+    pisces.addEventListener('mouseout', piscesMouseOut);
+
+    }
+
+piscesMouseEvents();
+    
+

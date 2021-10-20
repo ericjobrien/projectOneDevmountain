@@ -32,7 +32,7 @@ header {
     justify-content: center;
     column-gap: 100px;
     align-items: flex-end;
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
 
 }
 
@@ -89,4 +89,124 @@ header {
     background-repeat: no-repeat;
     margin-left: 10px;
     border-radius: 15px;
+}
+
+#tableTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+    font-size: 28px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 3vh;
+}
+
+td {
+    border: 1px black;
+    background-color: cadetblue;
+    border-radius: 15px;
+    width: 3%;
+    height: 20vh;
+    text-align: center;
+    font-size: 13px;
+}
+
+#aries {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/Aries_puff-2fba.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#taurus {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/TAURUS01_puff-6a80.png?quality=90&strip=all&zoom=1&resize=644%2C338');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#gemini {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/image-22bb.png?quality=90&strip=all&zoom=1&resize=644%2C339');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#cancer {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/CANCER01_puff-e7e8.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#leo {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/LEO01_puff-7335.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#virgo {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2020/12/VIRGO01-a26e.png?w=1200&h=630&crop=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#libra {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/LIBRA01_PUFF-f186.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#scorpius {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/SCORPIO01_puff-515d.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#sagittarius {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/SAGITTARIUS01_puff-48dd.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#capricornus {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/CAPRICORN01-c5c2.jpg?quality=90&strip=all&zoom=1&resize=644%2C338');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#aquarius{
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/AQUARIUS01-3824.jpg?quality=90&strip=all&zoom=1&resize=644%2C338');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
+}
+
+#pisces {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/01/PISCES01_puff-b14f.png?quality=90&strip=all&zoom=1&resize=644%2C482');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavender;
 }
