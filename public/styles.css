@@ -58,11 +58,12 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 11em;
-    margin-bottom: 2vh;
+    
 }
 
 
 #questionButton {
+    margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
     width: 4em;
