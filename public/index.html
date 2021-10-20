@@ -30,7 +30,7 @@
     </section>
     <section id="question">
         <form>
-            <input id="questionForm" type="text" placeholder="Type Question Here"/>
+            <input id="questionForm" type="text" placeholder="Ask a Question"/>
         </form>
         <div id="questionButton">
             <button id="qBtn">Get Reply</button>
@@ -55,11 +55,11 @@
             const sectionEl = document.getElementById('underReplyBtn');
 
             sectionEl.appendChild(questionPara);
-            questionPara.style.fontSize = '28';
+            questionPara.style.fontSize = '28px';
             questionPara.style.color = 'black';
             questionPara.textContent = `Question: ${text}`
             console.log(text);
-            
+
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
             answerEl.style.color = 'rgb(214, 0, 0)';
