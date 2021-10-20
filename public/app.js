@@ -109,15 +109,21 @@ themeChange();
 
 
     const ariesMouseEvents = () => {
+        let newEl = document.createElement('p');
+        aries.appendChild(newEl);
 
         const ariesMouseOver = () => {
             aries.style.boxShadow = '5px 10px 5px #000000';
             aries.style.opacity = '75%';
+            newEl.style.visibility = 'visible';
+            newEl.textContent = 'Aries: March 21–April 19';
+            newEl.style.fontSize = '20px';
         }
 
         const ariesMouseOut = () => {
             aries.style.boxShadow = '0px 0px 0px';
             aries.style.opacity = '100';
+            newEl.style.visibility = 'hidden';
         }
 
         aries.addEventListener('mouseover', ariesMouseOver);
@@ -130,15 +136,22 @@ themeChange();
     
 
     const taurusMouseEvents = () => {
+        let newEl = document.createElement('p');
+        taurus.appendChild(newEl);
+        
 
         const taurusMouseOver = () => {
             taurus.style.boxShadow = '5px 10px 5px #000000';
             taurus.style.opacity = '75%';
+            newEl.style.visibility = 'visible';
+            newEl.textContent = 'Taurus: April 20–May 20';
+            newEl.style.fontSize = '20px';
         }
 
         const taurusMouseOut = () => {
             taurus.style.boxShadow = '0px 0px 0px';
             taurus.style.opacity = '100';
+            newEl.style.visibility = 'hidden';
         }
 
         taurus.addEventListener('mouseover', taurusMouseOver);
@@ -151,15 +164,21 @@ taurusMouseEvents();
     
 
     const geminiMouseEvents = () => {
+        let newEl = document.createElement('p');
+        gemini.appendChild(newEl);
 
         const geminiMouseOver = () => {
             gemini.style.boxShadow = '5px 10px 5px #000000';
             gemini.style.opacity = '75%';
+            newEl.style.visibility = 'visible';
+            newEl.textContent = 'Gemini: May 21–June 21';
+            newEl.style.fontSize = '20px';
         }
 
         const geminiMouseOut = () => {
             gemini.style.boxShadow = '0px 0px 0px';
             gemini.style.opacity = '100';
+            newEl.style.visibility = 'hidden';
         }
 
         gemini.addEventListener('mouseover', geminiMouseOver);
@@ -172,15 +191,21 @@ geminiMouseEvents();
 
 
     const cancerMouseEvents = () => {
+        let newEl = document.createElement('p');
+        cancer.appendChild(newEl);
 
         const cancerMouseOver = () => {
             cancer.style.boxShadow = '5px 10px 5px #000000';
             cancer.style.opacity = '75%';
+            newEl.style.visibility = 'visible';
+            newEl.textContent = 'Cancer: June 22–July 22';
+            newEl.style.fontSize = '20px';
         }
 
         const cancerMouseOut = () => {
             cancer.style.boxShadow = '0px 0px 0px';
             cancer.style.opacity = '100';
+            newEl.style.visibility = 'hidden';
         }
 
         cancer.addEventListener('mouseover', cancerMouseOver);
@@ -193,15 +218,21 @@ cancerMouseEvents();
 
 
         const leoMouseEvents = () => {
+            let newEl = document.createElement('p');
+            leo.appendChild(newEl);
 
             const leoMouseOver = () => {
                 leo.style.boxShadow = '5px 10px 5px #000000';
                 leo.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Leo: July 23–August 22';
+                newEl.style.fontSize = '20px';
             }
 
             const leoMouseOut = () => {
                 leo.style.boxShadow = '0px 0px 0px';
                 leo.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             leo.addEventListener('mouseover', leoMouseOver);
@@ -214,15 +245,21 @@ leoMouseEvents();
 
 
         const virgoMouseEvents = () => {
+            let newEl = document.createElement('p');
+            virgo.appendChild(newEl);
 
             const virgoMouseOver = () => {
                 virgo.style.boxShadow = '5px 10px 5px #000000';
                 virgo.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Virgo: August 23–September 22';
+                newEl.style.fontSize = '20px';
             }
 
             const virgoMouseOut = () => {
                 virgo.style.boxShadow = '0px 0px 0px';
                 virgo.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             virgo.addEventListener('mouseover', virgoMouseOver);
@@ -234,15 +271,21 @@ virgoMouseEvents();
 
 
         const libraMouseEvents = () => {
+            let newEl = document.createElement('p');
+            libra.appendChild(newEl);
 
             const libraMouseOver = () => {
                 libra.style.boxShadow = '5px 10px 5px #000000';
                 libra.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'libra: September 23–October 23';
+                newEl.style.fontSize = '20px';
             }
 
             const libraMouseOut = () => {
                 libra.style.boxShadow = '0px 0px 0px';
                 libra.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             libra.addEventListener('mouseover', libraMouseOver);
@@ -255,15 +298,21 @@ libraMouseEvents();
 
 
         const scorpiusMouseEvents = () => {
+            let newEl = document.createElement('p');
+            scorpius.appendChild(newEl);
 
             const scorpiusMouseOver = () => {
                 scorpius.style.boxShadow = '5px 10px 5px #000000';
                 scorpius.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Scorpio: October 24–November 21';
+                newEl.style.fontSize = '20px';
             }
 
             const scorpiusMouseOut = () => {
                 scorpius.style.boxShadow = '0px 0px 0px';
                 scorpius.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             scorpius.addEventListener('mouseover', scorpiusMouseOver);
@@ -276,15 +325,21 @@ scorpiusMouseEvents();
         
 
         const sagittariusMouseEvents = () => {
+            let newEl = document.createElement('p');
+            sagittarius.appendChild(newEl);
 
             const sagittariusMouseOver = () => {
                 sagittarius.style.boxShadow = '5px 10px 5px #000000';
                 sagittarius.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'November 22–December 21';
+                newEl.style.fontSize = '20px';
             }
 
             const sagittariusMouseOut = () => {
                 sagittarius.style.boxShadow = '0px 0px 0px';
                 sagittarius.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             sagittarius.addEventListener('mouseover', sagittariusMouseOver);
@@ -297,15 +352,21 @@ sagittariusMouseEvents();
 
 
         const capricornusMouseEvents = () => {
+            let newEl = document.createElement('p');
+            capricornus.appendChild(newEl);
 
             const capricornusMouseOver = () => {
                 capricornus.style.boxShadow = '5px 10px 5px #000000';
                 capricornus.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Capricorn: December 22–January 19';
+                newEl.style.fontSize = '20px';
             }
 
             const capricornusMouseOut = () => {
                 capricornus.style.boxShadow = '0px 0px 0px';
                 capricornus.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             capricornus.addEventListener('mouseover', capricornusMouseOver);
@@ -318,15 +379,21 @@ capricornusMouseEvents();
 
 
         const aquariusMouseEvents = () => {
+            let newEl = document.createElement('p');
+            aquarius.appendChild(newEl);
 
             const aquariusMouseOver = () => {
                 aquarius.style.boxShadow = '5px 10px 5px #000000';
                 aquarius.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Aquarius: January 20–February 18';
+                newEl.style.fontSize = '20px';
             }
 
             const aquariusMouseOut = () => {
                 aquarius.style.boxShadow = '0px 0px 0px';
                 aquarius.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             aquarius.addEventListener('mouseover', aquariusMouseOver);
@@ -339,15 +406,21 @@ aquariusMouseEvents();
 
 
         const piscesMouseEvents = () => {
+            let newEl = document.createElement('p');
+            pisces.appendChild(newEl);
 
             const piscesMouseOver = () => {
                 pisces.style.boxShadow = '5px 10px 5px #000000';
                 pisces.style.opacity = '75%';
+                newEl.style.visibility = 'visible';
+                newEl.textContent = 'Pisces: February 19–March 20';
+                newEl.style.fontSize = '20px';
             }
 
             const piscesMouseOut = () => {
                 pisces.style.boxShadow = '0px 0px 0px';
                 pisces.style.opacity = '100';
+                newEl.style.visibility = 'hidden';
             }
 
             pisces.addEventListener('mouseover', piscesMouseOver);
