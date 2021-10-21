@@ -104,7 +104,7 @@
             const answerEl = document.createElement('p');
             const sectionEl = document.getElementById('underReplyBtn');
             
-            questionEl.innerHTML = '';
+            questionEl.value = ''; //clears the question form and returns it to the placeholder text
             sectionEl.appendChild(questionPara);
             questionPara.style.fontSize = '28px';
             questionPara.style.color = 'black';
