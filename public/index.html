@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +12,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 </head>
 <body>
-    <header>
-        <div id="logo"> <img/></div>
-        <div id="siteName">
-        HorrorScope
-        </div>
-    </header>
-    <section id="themeBlock">
-        <div id="themeText">
-            Choose Theme
-        </div>
-        <section class="theme">
-            <div>
-                <button id="evilDead">Evil Dead</button>
+    <div id="body_image">
+    <section id="movie_logo">
+        <header>
+            <div id="logo"> <img/></div>
+            <div id="siteName">
+            HorrorScope
             </div>
-            <div>
-                <button id="twd">The Walking Dead</button>
+        </header>
+        <section id="themeBlock">
+            <div id="themeText">
+                Choose Theme
             </div>
+            <section class="theme">
+                <div>
+                    <button id="evilDead">Evil Dead</button>
+                </div>
+                <div>
+                    <button id="twd">The Walking Dead</button>
+                </div>
+            </section>
         </section>
     </section>
     <section class="horroscope">
@@ -58,13 +64,17 @@
         </div>
     </section>
     <section id="question">
-        <form>
-            <input id="questionForm" type="text" placeholder="Ask a Question"/>
-        </form>
+        <div id="question_title">Ask a Question</div>
+        <div id='question_container'>
+            <form>
+                <input id="questionForm" type="text" placeholder="Ask a Question"/>
+            </form>
+        </div>
         <div id="questionButton">
             <button id="qBtn">Get Reply</button>
         </div>
     </section>
+    </div>
     <section id='underReplyBtn'>
 
     </section>
@@ -78,20 +88,22 @@
         // creating handler function for reply button - generates a random reply
         function displayAnswer(e) {
             e.preventDefault();
+            const questionEl = document.getElementById('questionForm');
             let text = document.getElementById('questionForm').value;
             const questionPara = document.createElement('p');
             const answerEl = document.createElement('p');
             const sectionEl = document.getElementById('underReplyBtn');
-
+            
+            questionEl.innerHTML = '';
             sectionEl.appendChild(questionPara);
             questionPara.style.fontSize = '28px';
             questionPara.style.color = 'black';
-            questionPara.textContent = `Question: ${text}`
+            questionPara.textContent = `Question: ${text}` //make sure I didn't break this
             console.log(text);
 
             sectionEl.appendChild(answerEl);
             answerEl.style.fontSize = '28px';
-            answerEl.style.color = 'rgb(214, 0, 0)';
+            answerEl.style.color = 'black';
 
             axios.get('/api/displayAnswer')
                 .then((res) => {
@@ -109,29 +121,8 @@
                      randomSaying(sayingArr);
                 }) 
         }
-
-        // function displayQuestion(body) {
-        //     e.preventDefault();
-        //     axios.post('api/displayQuestion', body)
-        //         .then((res) => {
-        //             let text = ({data: questions }) => ({
-
-        //             }) 
-        //             console.log(text);
-        //         })
-        // }
-
       
         replyBtn.addEventListener('click', displayAnswer);
-        
-        questionEl.addEventListener('keyup', function(event) {
-            event.preventDefault();
-            console.log(1);
-            if(event.keyCode === 13) {
-                console.log('hello again')
-                document.getElementById('qBtn').click();
-            }
-        });
 
     </script>
     <script src="app.js"></script>

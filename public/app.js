@@ -24,24 +24,39 @@ function themeChange() {
 //changes the theme of the website to TWD
 const twdTheme = () => {
     
-    const headerEl = document.querySelector('header');
+    const header = document.querySelector('header');
+    const movieThemeEl = document.getElementById('movie_logo');
     const logoEl = document.getElementById('logo');
     const siteNameEl = document.getElementById('siteName');
     const themeBlockEl = document.getElementById('themeBlock');
     const questionEl = document.getElementById('question');
     const questionBtnEl = document.getElementById('questionButton');
-
+    // const bodyImageEl = document.getElementById('body_image');
+    const bodyEl = document.querySelector('body');
+    const questionTitleEl = document.getElementById('question_title');
+    const questionFormEl = document.getElementById('questionForm');
+    
     //page
-    headerEl.style.backgroundColor = 'rgba(128, 194, 96, 0.5)';
-    logoEl.style.boxShadow = '3px 8px 2px #B60000';
+    questionTitleEl.style.color = 'red';
+    // questionFormEl.style.background = 'transparent';
+    // bodyImageEl.style.backgroundImage = "url('https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_2133,w_3200/https%3A%2F%2Fundeadwalking.com%2Ffiles%2Fimage-exchange%2F2020%2F09%2Fie_42650.jpeg')";
+    bodyEl.style.backgroundColor = '#80C260';
+    questionEl.style.backgroundImage = "url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2017%2F10%2Famc_twd_gallery__zombies_upshot_1745gn_v1-2000.jpg')";
+    logoEl.style.backgroundImage = "url('https://images.8tracks.com/cover/i/009/228/937/Walking-Dead-Season-2-9108.jpg?rect=216,0,996,996&q=98&fm=jpg&fit=max')";
+    header.style.background = 'transparent';
+    header.style.borderRadius = '15px';
+    themeBlockEl.style.background = 'rgba(0,0,0,0.5)';
+    movieThemeEl.style.backgroundImage = "url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/20/09/walking-dead-cast-kneel_1.jpg?width=1200')";
+    movieThemeEl.style.backgroundPosition = 'center';
+    logoEl.style.boxShadow = '3px 8px 2px #000000';
+    siteNameEl.style.color = 'black';
     siteNameEl.style.textShadow = '0px 4px 4px #B60000';
-    siteNameEl.style.color = 'white';
-    themeBlockEl.style.backgroundColor = 'rgba(128, 194, 96, 0.5)';
-    questionEl.style.background = 'rgba(128, 194, 96, 0.5)';
     questionEl.style.mixBlendMode = 'darken';
-    questionEl.style.boxShadow = '3px 8px 4px #B60000';
-    questionBtnEl.style.background = 'rgba(128, 194, 96, 0.5)';
-    questionBtnEl.style.boxShadow = '3px 8px 4px #B60000';
+    questionEl.style.boxShadow = '3px 8px 4px #000000';
+    questionBtnEl.style.background = '#B60000';
+    questionBtnEl.style.boxShadow = '3px 8px 4px #000000';
+    questionFormEl.style.background = '#B60000';
+    questionFormEl.style.boxShadow = '3px 8px 4px #000000';
 
     //horroscope
     aries.style.backgroundImage = "url('https://thesupernaturalfoxsisters.files.wordpress.com/2015/03/pix-daryl-dixon-motorcycle-2-the-walking-dead-spend1.jpeg')";
@@ -62,31 +77,48 @@ const twdTheme = () => {
 
 //changes the theme of the website to evil dead
 const evilDeadTheme = () => {
-    const headerEl = document.querySelector('header');
+    const header = document.querySelector('header');
+    const movieThemeEl = document.getElementById('movie_logo');
     const logoEl = document.getElementById('logo');
     const siteNameEl = document.getElementById('siteName');
     const themeBlockEl = document.getElementById('themeBlock');
     const questionEl = document.getElementById('question');
     const questionBtnEl = document.getElementById('questionButton');
-
+    const bodyEl = document.querySelector('body');
+    const questionTitleEl = document.getElementById('question_title');
+    const questionFormEl = document.getElementById('questionForm');
+    // loop for elements with same class - would have been useful...
+    // function combinedImage() {
+    // for(let i = 0; i < combinedBackground.length; i++) {
+    //     combinedBackground[i].style.backgroundImage = "url('https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/08/Evil-Dead-1.jpg')";
+    //    }
+    // }
+    // combinedImage();
     //page
-    headerEl.style.backgroundColor = '#866CF0';
+    questionTitleEl.style.color = 'red';
+    questionEl.style.backgroundImage = "url('http://3.bp.blogspot.com/-dnMXFOZ6GAE/U3gRw7XmwwI/AAAAAAAAKE0/vP2tJ1ujkUs/s1600/Evil-dead-review.jpg')";
+    bodyEl.style.backgroundColor = 'red';
+    logoEl.style.backgroundImage = "url('https://wegotthiscovered.com/wp-content/uploads/2018/03/evil_dead_01_1920x1080.jpg')";
+    header.style.background = 'transparent';
+    header.style.borderRadius = '15px';
+    themeBlockEl.style.background = 'rgba(0,0,0,0.5)';
+    movieThemeEl.style.backgroundImage = "url('https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/08/Evil-Dead-1.jpg')";
     logoEl.style.boxShadow = '3px 8px 2px #000000';
     siteNameEl.style.color = 'black';
     siteNameEl.style.textShadow = '0px 4px 4px #B60000';
-    themeBlockEl.style.backgroundColor = '#866CF0';
-    questionEl.style.background = '#B60000';
     questionEl.style.mixBlendMode = 'darken';
     questionEl.style.boxShadow = '3px 8px 4px #000000';
     questionBtnEl.style.background = '#B60000';
     questionBtnEl.style.boxShadow = '3px 8px 4px #000000';
+    questionFormEl.style.background = 'white';
+    questionFormEl.style.boxShadow = '3px 8px 4px #000000';
 
     //horroscope
     aries.style.backgroundImage = "url('https://nofspodcast.com/wp-content/uploads/2018/02/army-of-darkness-bruce-campbell-ash-chainsaw-768x413.jpeg')";
     taurus.style.backgroundImage = "url('https://i0.wp.com/thekoalition.com/images/2015/10/scissor.jpg')";
     gemini.style.backgroundImage = "url('https://allthingshorror666.files.wordpress.com/2013/12/4752989_l1.jpg')";
     cancer.style.backgroundImage = "url('https://bloody-disgusting.com/wp-content/uploads/2018/04/ash-vs-evil-dead-finale.jpg')";
-    leo.style.backgroundImage = "url('https://www.scifimoviezone.com/imagehorror/armydarkness007.jpg')";
+    leo.style.backgroundImage = "url('http://ingridrichter.info/cheese/graphics/A/army_darkness/gilbert_marcus1.jpg')";
     virgo.style.backgroundImage = "url('http://www.badmovies.org/movies/armydark/armydark4.jpg')";
     libra.style.backgroundImage = "url('https://www.denofgeek.com/wp-content/uploads/2018/03/pablo6.jpg')";
     scorpius.style.backgroundImage = "url('https://bloody-disgusting.com/wp-content/uploads/2016/09/LucyLawlessRuby3.jpg')";
@@ -113,6 +145,7 @@ themeChange();
         aries.appendChild(newEl);
 
         const ariesMouseOver = () => {
+            aries.style.cursor = 'pointer';
             aries.style.boxShadow = '5px 10px 5px #000000';
             aries.style.opacity = '75%';
             newEl.style.visibility = 'visible';
@@ -141,6 +174,7 @@ themeChange();
         
 
         const taurusMouseOver = () => {
+            taurus.style.cursor = 'pointer';
             taurus.style.boxShadow = '5px 10px 5px #000000';
             taurus.style.opacity = '75%';
             newEl.style.visibility = 'visible';
@@ -168,6 +202,7 @@ taurusMouseEvents();
         gemini.appendChild(newEl);
 
         const geminiMouseOver = () => {
+            gemini.style.cursor = 'pointer';
             gemini.style.boxShadow = '5px 10px 5px #000000';
             gemini.style.opacity = '75%';
             newEl.style.visibility = 'visible';
@@ -195,6 +230,7 @@ geminiMouseEvents();
         cancer.appendChild(newEl);
 
         const cancerMouseOver = () => {
+            cancer.style.cursor = 'pointer';
             cancer.style.boxShadow = '5px 10px 5px #000000';
             cancer.style.opacity = '75%';
             newEl.style.visibility = 'visible';
@@ -222,6 +258,7 @@ cancerMouseEvents();
             leo.appendChild(newEl);
 
             const leoMouseOver = () => {
+                leo.style.cursor = 'pointer';
                 leo.style.boxShadow = '5px 10px 5px #000000';
                 leo.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -249,6 +286,7 @@ leoMouseEvents();
             virgo.appendChild(newEl);
 
             const virgoMouseOver = () => {
+                virgo.style.cursor = 'pointer';
                 virgo.style.boxShadow = '5px 10px 5px #000000';
                 virgo.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -275,6 +313,7 @@ virgoMouseEvents();
             libra.appendChild(newEl);
 
             const libraMouseOver = () => {
+                libra.style.cursor = 'pointer';
                 libra.style.boxShadow = '5px 10px 5px #000000';
                 libra.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -302,6 +341,7 @@ libraMouseEvents();
             scorpius.appendChild(newEl);
 
             const scorpiusMouseOver = () => {
+                scorpius.style.cursor = 'pointer';
                 scorpius.style.boxShadow = '5px 10px 5px #000000';
                 scorpius.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -329,6 +369,7 @@ scorpiusMouseEvents();
             sagittarius.appendChild(newEl);
 
             const sagittariusMouseOver = () => {
+                sagittarius.style.cursor = 'pointer';
                 sagittarius.style.boxShadow = '5px 10px 5px #000000';
                 sagittarius.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -356,6 +397,7 @@ sagittariusMouseEvents();
             capricornus.appendChild(newEl);
 
             const capricornusMouseOver = () => {
+                capricornus.style.cursor = 'pointer';
                 capricornus.style.boxShadow = '5px 10px 5px #000000';
                 capricornus.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -383,6 +425,7 @@ capricornusMouseEvents();
             aquarius.appendChild(newEl);
 
             const aquariusMouseOver = () => {
+                aquarius.style.cursor = 'pointer';
                 aquarius.style.boxShadow = '5px 10px 5px #000000';
                 aquarius.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
@@ -410,6 +453,7 @@ aquariusMouseEvents();
             pisces.appendChild(newEl);
 
             const piscesMouseOver = () => {
+                pisces.style.cursor = 'pointer';
                 pisces.style.boxShadow = '5px 10px 5px #000000';
                 pisces.style.opacity = '75%';
                 newEl.style.visibility = 'visible';
