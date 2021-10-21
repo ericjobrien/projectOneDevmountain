@@ -481,4 +481,18 @@ aquariusMouseEvents();
 
 piscesMouseEvents();
     
+//horrorscope text events
 
+
+const horrorscopeTextEL = document.getElementById('horror_scope_response');
+const horrscopeCloseBtn = document.getElementById('close_button');
+    const horrorscopeResponse = () => {
+        horrorscopeTextEL.style.visibility = 'visible';
+    };
+
+    const horrorscopeClose = () => {
+        horrorscopeTextEL.style.visibility = 'hidden';
+    }
+
+    virgo.addEventListener('click', horrorscopeResponse);
+    horrscopeCloseBtn.addEventListener('click', horrorscopeClose);

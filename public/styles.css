@@ -90,6 +90,10 @@ button {
     visibility: hidden;
 }
 
+#close_button {
+    position: relative;
+}
+
 
 #tableTitle {
     display: flex;
