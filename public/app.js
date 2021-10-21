@@ -125,7 +125,7 @@ const evilDeadTheme = () => {
     taurus.style.backgroundImage = "url('https://i0.wp.com/thekoalition.com/images/2015/10/scissor.jpg')";
     gemini.style.backgroundImage = "url('https://allthingshorror666.files.wordpress.com/2013/12/4752989_l1.jpg')";
     cancer.style.backgroundImage = "url('https://bloody-disgusting.com/wp-content/uploads/2018/04/ash-vs-evil-dead-finale.jpg')";
-    leo.style.backgroundImage = "url('http://ingridrichter.info/cheese/graphics/A/army_darkness/gilbert_marcus1.jpg')";
+    leo.style.backgroundImage = "url('https://deadites.net/wp-content/uploads/aod_arthur.jpg)";
     virgo.style.backgroundImage = "url('http://www.badmovies.org/movies/armydark/armydark4.jpg')";
     libra.style.backgroundImage = "url('https://www.denofgeek.com/wp-content/uploads/2018/03/pablo6.jpg')";
     scorpius.style.backgroundImage = "url('https://bloody-disgusting.com/wp-content/uploads/2016/09/LucyLawlessRuby3.jpg')";
