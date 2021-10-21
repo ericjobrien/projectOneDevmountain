@@ -21,6 +21,24 @@ button {
     border-radius: 15px;
 }
 
+#siteName {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 82px;
+}
+
+#logo {
+    background-image: url("https://media.istockphoto.com/vectors/skull-and-crossbones-icon-on-white-background-vector-vector-id539681702?k=20&m=539681702&s=612x612&w=0&h=CWRAuCxpO1GuU8gujFzP7iKJdjgiDlxiBacakBx-jIY=");
+    width: 15vw;
+    height: 29vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
 #themeBlock {
     background-color: black;
 }
@@ -55,55 +73,23 @@ button {
     justify-content: center;
     
 }
-#question {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 11em; */
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
 
-#question_title {
-    font-size: 25px;
-    margin-bottom: 1vh;
-}
 
-#questionButton {
-    margin-top: 1vh;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 4em; */
-    margin-bottom: 4vh;
-    font-size: 15px;
+#horror_scope_response {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color: white;
     border-radius: 15px;
+    /* position: absolute;   gets the horrorscope container to stay on the left of the table*/
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 80%;
+    visibility: hidden;
 }
 
-
-
-#siteName {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
-    line-height: 82px;
-}
-
-#logo {
-    background-image: url("https://media.istockphoto.com/vectors/skull-and-crossbones-icon-on-white-background-vector-vector-id539681702?k=20&m=539681702&s=612x612&w=0&h=CWRAuCxpO1GuU8gujFzP7iKJdjgiDlxiBacakBx-jIY=");
-    width: 15vw;
-    height: 29vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    border-radius: 15px;
-}
 
 #tableTitle {
     display: flex;
@@ -225,4 +211,36 @@ td {
     background-repeat: no-repeat;
     background-size: cover;
     color: lavender;
+}
+
+#question {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question_title {
+    font-size: 25px;
+    margin-bottom: 1vh;
+}
+
+#questionButton {
+    margin-top: 1vh;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 4em; */
+    margin-bottom: 4vh;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+#underReplyBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }

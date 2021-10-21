@@ -31,15 +31,17 @@ const twdTheme = () => {
     const themeBlockEl = document.getElementById('themeBlock');
     const questionEl = document.getElementById('question');
     const questionBtnEl = document.getElementById('questionButton');
-    // const bodyImageEl = document.getElementById('body_image');
+    const bodyImageEl = document.getElementById('body_image');
     const bodyEl = document.querySelector('body');
     const questionTitleEl = document.getElementById('question_title');
     const questionFormEl = document.getElementById('questionForm');
-    
+    const tableTitle = document.getElementById('tableTitle');
     //page
+
+    tableTitle.style.color = 'white';
     questionTitleEl.style.color = 'red';
     // questionFormEl.style.background = 'transparent';
-    // bodyImageEl.style.backgroundImage = "url('https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_2133,w_3200/https%3A%2F%2Fundeadwalking.com%2Ffiles%2Fimage-exchange%2F2020%2F09%2Fie_42650.jpeg')";
+    bodyImageEl.style.backgroundImage = "url('https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_2133,w_3200/https%3A%2F%2Fundeadwalking.com%2Ffiles%2Fimage-exchange%2F2020%2F09%2Fie_42650.jpeg')";
     bodyEl.style.backgroundColor = '#80C260';
     questionEl.style.backgroundImage = "url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2017%2F10%2Famc_twd_gallery__zombies_upshot_1745gn_v1-2000.jpg')";
     logoEl.style.backgroundImage = "url('https://images.8tracks.com/cover/i/009/228/937/Walking-Dead-Season-2-9108.jpg?rect=216,0,996,996&q=98&fm=jpg&fit=max')";
@@ -87,6 +89,7 @@ const evilDeadTheme = () => {
     const bodyEl = document.querySelector('body');
     const questionTitleEl = document.getElementById('question_title');
     const questionFormEl = document.getElementById('questionForm');
+    const bodyImageEl = document.getElementById('body_image');
     // loop for elements with same class - would have been useful...
     // function combinedImage() {
     // for(let i = 0; i < combinedBackground.length; i++) {
@@ -95,6 +98,10 @@ const evilDeadTheme = () => {
     // }
     // combinedImage();
     //page
+    bodyImageEl.style.backgroundImage = "url('https://factmag-images.s3.amazonaws.com/wp-content/uploads/2017/05/Evil_Dead_2_Cover_semi_hi-res-1024x10241.jpg')";
+    bodyImageEl.style.backgroundPosition = 'center';
+    bodyImageEl.style.backgroundRepeat = 'no-repeat';
+    bodyImageEl.style.backgroundSize = 'cover';
     questionTitleEl.style.color = 'red';
     questionEl.style.backgroundImage = "url('http://3.bp.blogspot.com/-dnMXFOZ6GAE/U3gRw7XmwwI/AAAAAAAAKE0/vP2tJ1ujkUs/s1600/Evil-dead-review.jpg')";
     bodyEl.style.backgroundColor = 'red';
